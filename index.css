@@ -1,12 +1,14 @@
-html {
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
   margin: 0;
-  margin-bottom: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   display: block;
   margin: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -101,7 +103,7 @@ main {
   display: inline-block;
 }
 
-.social_links2 > li {
+.social_links2>li {
   padding: 37px;
   list-style: none;
   display: inline-block;
@@ -109,7 +111,7 @@ main {
   margin-top: -28px;
 }
 
-.social_links > li {
+.social_links>li {
   list-style: none;
   display: inline-block;
   margin-left: -3px;
@@ -130,20 +132,37 @@ main {
   margin-bottom: -54px;
 }
 
+.img_desk {
+  display: none;
+}
+
+.img_desk2 {
+  display: none;
+}
+
+.img_desk3 {
+  display: none;
+}
+
+.img_desk4 {
+  display: none;
+}
+
 .background_color {
   background-color: rgb(248, 247, 246);
 }
 
 .container5 {
-  margin-top: 19px;
-  outline-style: round;
   padding-left: 32px;
   padding-top: 16px;
-  border-radius: 8px;
 }
 
 .tonic {
   padding: 1% 12% -1% 5%;
+}
+
+.tonic2 {
+  display: none;
 }
 
 .dots {
@@ -272,6 +291,17 @@ ul {
   border-color: #e5e5e5;
 }
 
+.work_card,
+.work_card2 {
+  height: 496px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: white;
+}
+
 .second_title {
   font-style: normal;
   font-size: 40px;
@@ -280,24 +310,40 @@ ul {
   color: #172b4d;
 }
 
-.canopy span {
-  color: #344563;
-  margin-left: -78px;
+.first_list,
+.desk_list,
+.face_list{
+  margin-bottom: 40px;
 }
 
-.canopy {
+.first_list,
+.desk_list,
+.face_list {
   display: flex;
   color: #7a869a;
-  list-style-type: disc;
-  justify-content: space-evenly;
-  font-weight: bold;
-  font-family: 'poppins', sans-serif;
-  margin-top: -21px;
-  margin-left: 23px;
+  list-style: disc;
 }
 
-.dot5 {
-  list-style-type: circle;
+.first_list li:first-child,
+.desk_list li:first-child,
+.face_list li:first-child {
+  color: #344563;
+  list-style: none;
+  margin-left: 0;
+}
+
+.first_list li,
+.desk_list li,
+.face_list {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  margin-left: 12px;
+  margin-right: 15px;
+}
+
+.desk_list {
+  display: none;
 }
 
 .frame {
@@ -327,6 +373,7 @@ p {
   font-size: 21px;
   line-height: 28px;
   padding: 1px 1px 1px 1px;
+  display: flex;
 }
 
 .contact_form_container {
@@ -490,4 +537,239 @@ input[type="email"i] {
   text-align: center;
   letter-spacing: 0;
   margin-top: 167px;
+}
+
+.contact_last_session {
+  margin-left: -9px;
+}
+
+/* media query */
+@media screen and (min-width: 765px) {
+
+  .my-logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #6070ff;
+    padding-left: 130px;
+  }
+
+  .first-para {
+    font-style: normal;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 83px;
+    color: #172b4d;
+    margin-left: 171px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .desk_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 18vw;
+    margin-top: -35px;
+  }
+
+  .desk_menu li {
+    display: inline-block;
+    margin-left: 22px;
+  }
+
+  .desk_menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .section1 {
+    background-image: url('./images_desk/backgroundf]contactform.jpg');
+    background-position: 15px 20px;
+    background-size: cover;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: -20px -37px;
+    width: 65%;
+    border-bottom-left-radius: 150px;
+  }
+
+  .work_card {
+    height: 496px;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    align-content: center;
+    gap: 0;
+    background-color: white;
+  }
+
+  .work_card2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .desk_list {
+    display: flex;
+  }
+
+  .first_list {
+    display: none
+  }
+
+  .container1,
+  .container2,
+  .container3,
+  .container4 {
+    margin-top: 102px;
+    outline-style: round;
+    background-color: rgb(248, 247, 246);
+    height: 614px;
+    width: 330;
+    padding-left: 25px;
+    padding-top: 16px;
+    border-radius: 8px;
+    margin-bottom: -54px;
+    max-width: 100vw;
+  }
+
+  .img_desk {
+    display: block;
+    margin: auto 15px;
+    max-width: 90%;
+  }
+
+  .img_mobi {
+    display: none;
+  }
+
+  .img_desk2 {
+    display: block;
+    margin: auto 15px;
+    max-width: 90%;
+  }
+
+  .img_mobi2 {
+    display: none;
+  }
+
+  .img_desk3 {
+    display: block;
+    margin: auto 15px;
+    max-width: 90%;
+  }
+
+  .img_mobi3 {
+    display: none;
+  }
+
+  .img_desk4 {
+    display: block;
+    margin: auto 15px;
+    max-width: 90%;
+  }
+
+  .img_mobi4 {
+    display: none;
+  }
+
+  .container5 {
+    display: flex;
+    max-width: 1500px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    border-top-right-radius: 100px;
+    padding: 100px;
+    margin-top: 80px;
+
+  }
+
+  .tonic3 {
+    display: none;
+  }
+
+  .tonic2 {
+    display: block;
+  }
+
+  .languages {
+    display: flex;
+  }
+
+  .languages_section {
+    display: flex;
+  }
+
+  .aboutme {
+    gap: 12px;
+    width: 58vw;
+    justify-content: space-around;
+    margin-top: -90px;
+    padding-right: 25px;
+  }
+
+  .about_title {
+    margin-top: 60px;
+  }
+
+  .languages li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    background-color: #f7f7f9;
+    margin: 15px;
+    padding: 10px;
+    font-size: 111%;
+    font-weight: bold;
+    color: #253858;
+  }
+
+
+  .languages strong {
+    margin-left: 2px;
+    margin-top: 32px;
+  }
+
+  .frame {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -23irem;
+    margin-bottom: 14px;
+    width: 76vw;
+  }
+
+  .contact_last_session {
+    margin: 0 auto;
+  }
+
+  .contact_form_container {
+    background-image: url('./images_desk/contactformbackground2.jpg');
+    max-width: 1500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 794px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    border-top-left-radius: 14%;
+    width: 86%;
+  }
+
+}
+
+/* breakpoint */
+@media screen and (max-width: 765px) {
+  .desk_menu {
+    display: none;
+  }
 }
