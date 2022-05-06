@@ -641,8 +641,6 @@
                   maxlength="30"
                   placeholder="Yeremias"
                   pattern="[a-z]{1,30}"
-                  required
-                  title="Username should only contain lowercase letters. e.g John"
                 />
               </li>
               <li>
@@ -653,18 +651,16 @@
                   name="contact_email"
                   maxlength="32"
                   placeholder="natajayanj14@gmail.com"
-                  required
-                  pattern=".+@\.com"
                   title="Please Enter Valide Email Id"
                 />
               </li>
               <li>
-                <input
+                <textarea
                   class="msg"
                   maxlength="500"
                   name="user_message"
-                  placeholder="Write your message here"
-                />
+                  placeholder="Write your message here">
+                </textarea>
               </li>
             </ul>
 

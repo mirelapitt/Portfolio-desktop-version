@@ -501,7 +501,8 @@ form {
   box-sizing: border-box;
   width: 96%;
   height: 170px;
-  text-align: -webkit-center;
+  margin-left: 17px;
+  margin-top: 20px;
 }
 
 .contactme-title,
