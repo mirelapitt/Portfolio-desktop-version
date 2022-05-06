@@ -340,36 +340,28 @@ ul {
 .first_list,
 .desk_list,
 .face_list {
-  margin-bottom: 24px;
-}
-
-.desk_first_list,
-.first_list,
-.desk_list,
-.face_list {
   display: flex;
   color: #7a869a;
   list-style: disc;
+  margin-bottom: 24px;
 }
 
-.desk_first_list li:first-child,
-.first_list li:first-child,
-.desk_list li:first-child,
-.face_list li:first-child {
-  color: #344563;
-  list-style: none;
-  margin-left: 0;
-}
-
-.desk_first_list,
+.desk_first_list li,
 .first_list li,
-.desk_list li,
-.face_list {
+.desk_list li {
   font-weight: 600;
   font-size: 15px;
   line-height: 16px;
   margin-left: 12px;
   margin-right: 15px;
+}
+
+.desk_first_list li:first-child,
+.first_list li:first-child,
+.desk_list li:first-child {
+  color: #344563;
+  list-style: none;
+  margin-left: 0;
 }
 
 .desk_list {
@@ -465,7 +457,7 @@ h4 {
   border-width: 1px;
   font-size: 111%;
   margin-right: 189px;
-  margin-left: -4px;
+  margin-left: 8%;
 }
 
 .get_in_touch:hover {
@@ -484,14 +476,6 @@ h4 {
   text-align: right;
 }
 
-.formpart li {
-  margin-left: 1px;
-  padding: 5px 1px 1px 1px;
-  text-align: center;
-  justify-content: space-between;
-  border-radius: 1%;
-}
-
 input {
   width: 327px;
   margin-left: -48px;
@@ -506,14 +490,6 @@ input[type='email'i] {
   margin-top: 25px;
   margin-bottom: 10px;
   width: 351px;
-}
-
-textarea {
-  width: 324px;
-  height: 170px;
-  margin-left: -47px;
-  border-radius: 10px;
-  border: none;
 }
 
 .form_font {
@@ -541,12 +517,6 @@ textarea {
 
 form {
   margin-top: 1px;
-}
-
-input[type='email'i] {
-  padding: 3px 3px;
-  margin-top: 25px;
-  margin-bottom: 10px;
 }
 
 .form_part {
@@ -579,8 +549,8 @@ input[type='email'i] {
   padding: 27px;
 }
 
-.contact_last_session {
-  margin-left: 19px;
+.form_contact {
+  margin-left: 9%;
 }
 
 /* media query */
@@ -626,14 +596,12 @@ input[type='email'i] {
   .second-para p {
     width: 686px;
     height: 239px;
-    margin-left: 137px;
     margin: 0 auto 0 163px;
   }
 
   .third-para {
     line-height: 70px;
     color: #7f8cff;
-    margin: 0 auto;
     margin-left: 174px;
     margin-top: -182px;
   }
@@ -695,6 +663,7 @@ input[type='email'i] {
 
   .desk_list {
     display: flex;
+    margin-bottom: 7px;
   }
 
   .desk_first_list {
@@ -840,13 +809,8 @@ input[type='email'i] {
   .frame {
     display: flex;
     justify-content: space-evenly;
-    margin-left: -23irem;
     margin-bottom: 14px;
     width: 388px;
-  }
-
-  .contact_last_session {
-    margin: 0 auto;
   }
 
   .contact_form_container {
@@ -867,6 +831,7 @@ input[type='email'i] {
 
   .contact_last_session {
     width: 347px;
+    margin: 0 auto;
   }
 
   .get_in_touch {
