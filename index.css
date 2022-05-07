@@ -75,13 +75,6 @@ main {
   cursor: pointer;
 }
 
-.hamburger:hover {
-  background-color: #FFCCCC;
-  width: 200px;
-  height: 200px;
-  transform: rotate(180deg);
-}
-
 .first-para {
   font-style: normal;
   font-size: 40px;
